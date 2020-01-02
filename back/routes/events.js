@@ -1,12 +1,14 @@
 const express = require('express');
 const router = express.Router();
 const connection = require("./conf");
+const verifyToken = require('./middleware');
+
 
 
 
 // //Ajouter un événement.
 
-router.post('/', (req, res) => {
+router.post('/', verifyToken, (req, res) => {
 
 
     connection.query('INSERT INTO events (event_name, event_desc, event_date, start_hour, end_hour, price, remain_place) VALUES (?, ?, ?, ?, ?, ?, ?)', 
@@ -27,7 +29,7 @@ router.post('/', (req, res) => {
 // //Modifier un événement.
 
 router.put(
-    "/:id",
+    "/:id", verifyToken,
     (req, res) => {
         connection.query(
             "UPDATE events SET event_name = ?, event_desc = ?, event_date =?, start_hour= ?, end_hour = ?,price = ?, remain_place = ?  WHERE id = ?",
@@ -96,7 +98,7 @@ router.get(
 // //supression d'un event.
 
 router.delete(
-    "/:id", 
+    "/:id", verifyToken,
     (req, res) => {
         connection.query(
             "SELECT * FROM events WHERE id=?", 
