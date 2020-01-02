@@ -4,7 +4,6 @@ describe(
     "test contact entity",
     () => {
 
-        let token = "";
         let contact = {
             contact_name: "Jeremy t po pd",
             adress: "squeezie",
@@ -16,20 +15,7 @@ describe(
             (done) => {
 
                 const server = require("../server.js");
-                request.post( 
-                    "/api/login", 
-                    { 
-                        json:true, 
-                        body:{
-                            username: "admin", 
-                            user_password: "admin"
-                        }
-                    }, 
-                    (error, response, body) => {
-                        token = "Bearer " + body.token;
-                        done();
-                    }
-                )
+                done();
             }
         )
 
@@ -41,10 +27,7 @@ describe(
                     "http://localhost:3000/api/contact/",
                     {
                         json: true,
-                        body: contact, 
-                        headers: {
-                            "Authorization": token
-                        }
+                        body: contact
                     },
                     (error, response, body) => {
                         expect(body.id).toBeGreaterThan(0);
