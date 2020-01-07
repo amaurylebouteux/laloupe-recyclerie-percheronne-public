@@ -3,10 +3,10 @@ import './App.css';
 import Navbar from './components/navbar/Navbar';
 import SideDrawer from './components/drawer/SideDrawer';
 import Backdrop from './components/backdrop/Backdrop';
-import Horaires from './components/horaires/Horaires';
-import Compteurs from './components/compteurs/Compteurs';
+import Horaires from './components/accueil/horaires/Horaires';
+import Compteurs from './components/accueil/compteurs/Compteurs';
 import Footer from './components/footer/Footer';
-import Carousel from './components/carousel/Carousel';
+import Carousel from './components/accueil/carousel/Carousel';
 
 class App extends React.Component {
   state = {
