@@ -1,6 +1,8 @@
 const express = require('express');
 const router = express.Router();
 const connection = require("./conf");
+const verifyToken = require('./middleware');
+
 
 
 
@@ -86,7 +88,7 @@ router.get(
 
 // //Ajout d'un enregistrement dans la table func_content
 
-router.post('/', (req, res) => {
+router.post('/', verifyToken, (req, res) => {
 
     connection.query('INSERT INTO func_content (title, content) VALUES (?, ?)', [req.body.title, req.body.content], (err, results, fields) => {
         if (err) {
@@ -102,7 +104,7 @@ router.post('/', (req, res) => {
 
 // //Suppression d'un enregistrement de la table func_content
 
-router.delete('/:id', (req, res) => {
+router.delete('/:id', verifyToken, (req, res) => {
 
 
     connection.query('SELECT * FROM func_content WHERE id = ?', [req.params.id],
@@ -138,7 +140,7 @@ router.delete('/:id', (req, res) => {
 // //Modification d'un enregistrement de la table func_content.
 
 router.put(
-    "/:id",
+    "/:id", verifyToken,
     (req, res) => {
         connection.query(
             "UPDATE func_content SET title=?, content=? WHERE id=?",
@@ -167,7 +169,7 @@ router.put(
 // //Modification d'un titre de la table func_content.
 
 router.put(
-    "/title/:id",
+    "/title/:id", verifyToken,
     (req, res) => {
         connection.query(
             "UPDATE func_content SET title=? WHERE id=?",
@@ -196,7 +198,7 @@ router.put(
 // //Modification du contenu descriptif de la table func_content.
 
 router.put(
-    "/content/:id",
+    "/content/:id", verifyToken,
     (req, res) => {
         connection.query(
             "UPDATE func_content SET content=? WHERE id=?",

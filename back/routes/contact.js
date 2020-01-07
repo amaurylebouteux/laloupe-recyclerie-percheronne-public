@@ -1,10 +1,11 @@
 const express = require('express');
 const router = express.Router();
 const connection = require("./conf");
+const verifyToken = require('./middleware');
 
 // //Ici on créée un nouveau contact.
 
-router.post('/', (req, res) => {
+router.post('/', verifyToken, (req, res) => {
 
 
 
@@ -24,7 +25,7 @@ router.post('/', (req, res) => {
 // //Met à jour le contact !
 
 router.put(
-    "/:id",
+    "/:id", verifyToken,
     (req, res) => {
         connection.query(
             "UPDATE contact SET contact_name=?, adress=?, phone=?, mail=? WHERE id=?",
