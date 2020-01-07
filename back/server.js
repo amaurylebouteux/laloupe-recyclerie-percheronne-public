@@ -1,7 +1,7 @@
 const express = require('express');
 const api = require('./routes');
 const app = express();
-const port = 3000;
+const port = 8000;
 const bodyParser = require('body-parser');
 const connection = require("./routes/conf");
 
