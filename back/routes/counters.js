@@ -1,10 +1,12 @@
 const express = require('express');
 const router = express.Router();
 const connection = require("./conf");
+const verifyToken = require('./middleware');
+
 
 //Creation des compteurs(Nom et poids).
 
-router.post('/', (req, res) => {
+router.post('/', verifyToken, (req, res) => {
 
 
 
@@ -23,7 +25,7 @@ router.post('/', (req, res) => {
 //Modification des compteurs (Nom et poids).
 
 router.put(
-    "/:id",
+    "/:id", verifyToken,
     (req, res) => {
         connection.query(
             "UPDATE counters SET count_name=?, count_values=? WHERE id=?",
