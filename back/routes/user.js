@@ -1,10 +1,66 @@
 const express = require('express');
 const router = express.Router();
 const connection = require("./conf");
+const verifyToken = require('./middleware');
+
+router.post(
+    "/api/register", 
+    (req,res) => {
+      connection.query(
+        "INSERT INTO user (username, user_password) VALUES (?, ?)", 
+        ["admin", bcrypt.hashSync("admin", salt)], 
+        (error, results, fields) => {
+          if( error ){
+            res.send(error);
+          }
+          else{
+            res.send("OK");
+          }
+        }
+      )
+    }
+  )
+  
+  router.post('/api/login', (req, res) => {
+  
+    // on récupère les données de connexion de notre utilisateur 
+    const user = req.body;
+    const crypted = bcrypt.hashSync(user.user_password, salt );
+  
+    // on va essayer de trouver dans la base de données un utilisateur 
+    // dont les noms et mots de passe correspondent
+  
+    connection.query(
+      "SELECT * FROM user WHERE username=? AND user_password=?",
+      [user.username, crypted ],
+      (error, results, fields) => {
+        if (error && results.length === 0) {
+          res.status(401).send("Unable to login");
+        }
+        else {
+          // token creation
+          jwt.sign(
+            // results[0],
+            {user},
+            jwtsecret,
+            (err, token) => {
+              if( err ){
+                res.status(501).send("JWT error");
+              }
+              else{
+                res.json({token});
+              }
+            })
+        }
+      }
+    )
+  
+  })
+  
 
 //Ajouter un compte admin.
 
-router.post('/', (req, res) => {
+router.post('/', verifyToken, (req, res) => {
 
 
     connection.query('INSERT INTO user (username, user_password) VALUES (?, ?)', 
@@ -25,7 +81,7 @@ router.post('/', (req, res) => {
 //Modifier un compte Admin.
 
 router.put(
-    "/:id",
+    "/:id", verifyToken,
     (req, res) => {
         connection.query(
             "UPDATE user SET username = ?, user_password = ? WHERE id = ?",
@@ -55,7 +111,7 @@ router.put(
 // Lecture de la table user.
 
 router.get(
-    "/",
+    "/", verifyToken,
     (req, res) => {
         connection.query('SELECT * FROM user ', (error, results, fields) => {
             if (error) {
@@ -72,7 +128,7 @@ router.get(
 //supression d'un compte administrateur.
 
 router.delete(
-    "/:id", 
+    "/:id", verifyToken,
     (req, res) => {
         connection.query(
             "SELECT * FROM user WHERE id=?", 
