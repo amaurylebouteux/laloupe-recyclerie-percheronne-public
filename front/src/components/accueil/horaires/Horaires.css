@@ -4,7 +4,7 @@
         color: white;
     }
 
-    td {
+    .case {
         padding-bottom: 5px;
         padding-top: 5px;
         background-color: gray;
