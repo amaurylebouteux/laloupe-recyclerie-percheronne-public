@@ -3,10 +3,18 @@ import './App.css';
 import Navbar from './components/navbar/Navbar';
 import SideDrawer from './components/drawer/SideDrawer';
 import Backdrop from './components/backdrop/Backdrop';
+
+import Carousel from './components/accueil/carousel/Carousel';
 import Horaires from './components/accueil/horaires/Horaires';
 import Compteurs from './components/accueil/compteurs/Compteurs';
+
+import Explication from './components/fonctionnement/explication/Explication';
+import Objets from './components/fonctionnement/objets/Objets';
+import Plan from './components/fonctionnement/plan/Plan';
+
+import Contact from './components/contact/contact/Contact';
+
 import Footer from './components/footer/Footer';
-import Carousel from './components/accueil/carousel/Carousel';
 
 class App extends React.Component {
   state = {
@@ -32,9 +40,19 @@ class App extends React.Component {
           <SideDrawer show={this.state.sideDrawerOpen} />
           {backdrop}
         </div>
-        <Carousel />
+
+
+{/*         <Carousel />
         <Horaires />
-        <Compteurs />
+        <Compteurs /> */}
+
+
+{/*         <Explication />
+        <Objets />
+        <Plan /> */}
+
+        <Contact />
+
         <Footer />
       </div>
     );
