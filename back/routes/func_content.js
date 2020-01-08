@@ -14,7 +14,7 @@ router.get('/', (req, res) => {
                 console.log('Dommage!');
             } else {
                 console.log('Marvellous');
-                res.json(results);
+                res.status(200).json(results);
             }
         });
 });
