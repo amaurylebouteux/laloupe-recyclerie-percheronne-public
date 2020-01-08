@@ -11,7 +11,7 @@ const navbar = props => (
             <div className="navbar__navigation-items">
                 <ul>
                     <li><a href="/">Fonctionnement</a></li>
-                    <li><a href="/">Évènements</a></li>
+                    <li><a href="/">Événements</a></li>
                     <li><a href="/">Produits</a></li>
                     <li><a href="/">Contact</a></li>
                 </ul>
