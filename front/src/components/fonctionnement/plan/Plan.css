@@ -1,6 +1,7 @@
-html {
-    background: url('../src/img/texture-bois.jpg');
-    background-size: cover;
+.image {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
 }
 
 @media screen and (max-width:420px) {
@@ -17,6 +18,10 @@ html {
     .mob-10{width: 83.33%;}
     .mob-11{width: 91.66%;}
     .mob-12{width: 100%;}
+
+    .image {
+        margin-bottom: 44px;
+    }
 }
 
 @media screen and (min-width:421px) and (max-width:1022px) {
@@ -33,6 +38,10 @@ html {
     .tab-10{width: 83.33%;}
     .tab-11{width: 91.66%;}
     .tab-12{width: 100%;}
+    
+    .image {
+        margin-bottom: 74px;
+    }
 }
 
 @media screen and (min-width:1023px) and (max-width:1024px) {
@@ -49,6 +58,10 @@ html {
     .tabx-10{width: 83.33%;}
     .tabx-11{width: 91.66%;}
     .tabx-12{width: 100%;}
+
+    .image {
+        margin-bottom: 104px;
+    }
 }
 
 @media screen and (min-width:1025px) {
@@ -65,4 +78,9 @@ html {
     .dsk-10{width: 83.33%;}
     .dsk-11{width: 91.66%;}
     .dsk-12{width: 100%;}
+
+    .image {
+        margin-bottom: 74px;
+    }
+
 }
