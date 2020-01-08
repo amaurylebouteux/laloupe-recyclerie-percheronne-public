@@ -2,7 +2,6 @@ import React, { useEffect } from 'react';
 import './SideDrawer.css'
 import { Link } from "react-router-dom";
 
-
 const sideDrawer = props => {
     let drawerClasses = 'drawer';
     if (props.show) {
