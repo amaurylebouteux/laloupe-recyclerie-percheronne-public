@@ -1,5 +1,7 @@
 import React from 'react';
 import './Footer.css';
+import { Link } from "react-router-dom";
+
 
 function Footer() {
     return (
@@ -14,9 +16,9 @@ function Footer() {
                     </p>
                 </div>
                 <div className="mob-12 tab-12 dsk-12 legals">
-                    <a className="mob-12 tab-12 dsk-4 legals" href="https://www.facebook.com/recyclerie.percheronne" alt="Mentions légales">
+                    <Link to='/mentions'><a className="mob-12 tab-12 dsk-4 legals" href="/" alt="Mentions légales">
                         Mentions Légales
-                    </a>
+                    </a></Link>
                 </div>
             </div>
         </footer>
