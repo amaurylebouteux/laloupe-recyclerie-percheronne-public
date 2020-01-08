@@ -41,18 +41,18 @@ class App extends React.Component {
           {backdrop}
         </div>
 
-
-{/*         <Carousel />
+      
+        <Carousel />
         <Horaires />
-        <Compteurs /> */}
+        <Compteurs />
 
 
 {/*         <Explication />
         <Objets />
         <Plan /> */}
 
-        <Contact />
-
+{/*         <Contact />
+ */}
         <Footer />
       </div>
     );

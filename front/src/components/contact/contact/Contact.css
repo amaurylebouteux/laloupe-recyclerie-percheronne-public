@@ -12,7 +12,8 @@
     margin-right: auto;
     text-align: center;
     padding: 20px;
-    margin-top: 130px;
+    margin-top: 22vh;
+    margin-bottom: 13vh;
 }
 
 .nom {
@@ -40,7 +41,8 @@
     .mob-12{width: 100%;}
 
     .coord {
-        margin-bottom: 54px;
+        margin-top: 18vh;
+        margin-bottom: 10vh;
     }
 
     .joli {
@@ -84,7 +86,7 @@
     .tabx-12{width: 100%;}
 
     .coord {
-        margin-top: 300px;
+        margin-top: 22vh;
     }
 
     .pratique {
@@ -108,11 +110,12 @@
     .dsk-12{width: 100%;}
 
     .gauche {
-        margin-top: 10%;
-        margin-bottom: 10%;
+        margin-top: 9vh;
+        margin-bottom: 9vh;
     }
 
     .pratique {
         display: none;
+        margin: auto;
     }
 }
