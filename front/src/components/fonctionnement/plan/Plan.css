@@ -1,34 +1,8 @@
-    .table_horaires {
-        text-align: center;
-        background-color: black;
-        color: white;
-    }
-
-    .case {
-        padding-bottom: 5px;
-        padding-top: 5px;
-        background-color: gray;
-    }
-
-    .récupération {
-        background-color: #FFC065;
-        color: black;
-    }
-
-    .vente {
-        background-color: #E7ED8C;
-        color: black;
-    }
-
-    .double {
-        background: linear-gradient(0.25turn, #E7ED8C, #FFC065);
-        color: black;
-    }
-
-    .gras {
-        font-weight: bold;
-        padding-bottom: 8px;
-    }
+.image {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
 
 @media screen and (max-width:420px) {
     .mob-0{display: none;}
@@ -45,12 +19,8 @@
     .mob-11{width: 91.66%;}
     .mob-12{width: 100%;}
 
-    .horaires {
-        margin-top: 25px;
-    }
-
-    .case {
-        padding: 0;
+    .image {
+        margin-bottom: 44px;
     }
 }
 
@@ -68,17 +38,9 @@
     .tab-10{width: 83.33%;}
     .tab-11{width: 91.66%;}
     .tab-12{width: 100%;}
-
-    .horaires {
-        margin-top: 15px;
-    }
-
-    .table_horaires {
-        margin: auto;
-    }
-
-    .case {
-        padding: 0;
+    
+    .image {
+        margin-bottom: 74px;
     }
 }
 
@@ -97,12 +59,8 @@
     .tabx-11{width: 91.66%;}
     .tabx-12{width: 100%;}
 
-    .horaires {
-        margin-top: 30px;
-    }
-
-    .table_horaires {
-        margin: auto;
+    .image {
+        margin-bottom: 104px;
     }
 }
 
@@ -121,10 +79,8 @@
     .dsk-11{width: 91.66%;}
     .dsk-12{width: 100%;}
 
-    .horaires {
-        display: flex;
-        position: fixed;
-        left: 0;
-        bottom: 27%;
+    .image {
+        margin-bottom: 74px;
     }
+
 }
