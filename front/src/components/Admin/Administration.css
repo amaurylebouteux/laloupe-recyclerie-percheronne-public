@@ -18,7 +18,7 @@
 
 
 
-.adminButtonContainer{
+.adminHomeButtonContainer{
     display:flex;
     flex-direction: row;
     justify-content: space-around;
@@ -30,12 +30,12 @@
     align-items: center;
 }
 
-.adminChoice{
+.adminHomeChoice{
     padding:2vw;
 
 }
 
-.adminNavButton{
+.adminHomeNavButton{
     height: 3vw;
     width: 10vw;
     font-size: 1em;
@@ -81,17 +81,17 @@
         text-align:center;
     }
 
-    .adminChoice{
+    .adminHomeChoice{
         text-align: center;
     }
 
-    .adminButtonContainer{
+    .adminHomeButtonContainer{
         display:flex;
         flex-direction: column;
         justify-content: space-around;
     }
 
-    .adminNavButton{
+    .adminHomeNavButton{
         height: 6vw;
         width: 40vw;
         font-size: 1em;
@@ -141,20 +141,21 @@
         text-align:center;
     }
 
-    .adminChoice{
+    .adminHomeChoice{
         text-align: center;
-        font-size:2em;
+        font-size:1.8em;
     }
 
-    .adminButtonContainer{
+    .adminHomeButtonContainer{
         display:flex;
-        flex-direction: column;
+        flex-direction: row;
+        flex-wrap:wrap;
         justify-content: space-around;
     }
 
-    .adminNavButton{
+    .adminHomeNavButton{
         height: 6vw;
-        width: 40vw;
+        width: 35vw;
         font-size: 2em;
         margin: 0 1vw;
         margin:3vw;
@@ -200,20 +201,21 @@
         text-align:center;
     }
 
-    .adminChoice{
+    .adminHomeChoice{
         text-align: center;
-        font-size:2em;
+        font-size:1.8em;
     }
 
-    .adminButtonContainer{
+    .adminHomeButtonContainer{
         display:flex;
-        flex-direction: column;
+        flex-direction: row;
+        flex-wrap:wrap;
         justify-content: space-around;
     }
 
-    .adminNavButton{
+    .adminHomeNavButton{
         height: 6vw;
-        width: 40vw;
+        width: 32vw;
         font-size: 2em;
         margin: 0 1vw;
         margin:3vw;
