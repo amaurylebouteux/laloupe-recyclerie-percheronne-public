@@ -47,8 +47,6 @@ class App extends Component {
 		const { isLogged, redirectToAdminPage } = this.state;
   return (
     <div className="App">
-
-
       {redirectToAdminPage && <Redirect to="/administration" />}
         <Switch>
           <ScrollToTopRoute exact path='/' exact component={Accueil} />
@@ -65,11 +63,9 @@ class App extends Component {
           {isLogged ? <Route exact path = '/admincontact' component = {() => <AdminContact logOut = {this.logOut}/>}/> : <Redirect to="/adminlogin" />}
         </Switch>
     </div>
-  );
+  );}
+
 }
 }
-
-
-
 
 export default App;
