@@ -12,9 +12,9 @@ function Horaires() {
                 </thead>
                 <tbody>
                     <tr>
-                        <td colSpan="2" className="case">Jour</td>
-                        <td colSpan="2" className="case">Matin</td>
-                        <td colSpan="2" className="case">Après-midi</td>
+                        <td colSpan="2" className="case gras">Jour</td>
+                        <td colSpan="2" className="case gras">Matin</td>
+                        <td colSpan="2" className="case gras">Après-midi</td>
                     </tr>
                     <tr>
                         <td colSpan="2" className="case">Lundi</td>
