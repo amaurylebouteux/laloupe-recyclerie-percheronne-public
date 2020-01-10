@@ -1,8 +1,6 @@
 const express = require('express');
 const router = express.Router();
 const connection = require("./conf");
-const verifyToken = require('./middleware');
-
 
 //récupération du nom des horaires (ventes)
 router.get('/schedule', (req, res) => {

@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import './AdminLogin.css';
+import { Link } from "react-router-dom";
 const SERVER_ADDRESS = process.env.REACT_APP_SERVER_ADDRESS;
 
 
@@ -62,7 +63,7 @@ class AdminLogin extends Component {
         return (
         <>
           <div className="adminheader">
-            <img id="logoAdmin" src ="./img/logo.png" alt="logo" />
+		  <Link to='/'><img id="logoAdmin" src ="./img/logo.png" alt="logo" /></Link>
            
             <h1 className="adminTitle mob-8">Administration Recyclerie Percheronne</h1>
           </div>

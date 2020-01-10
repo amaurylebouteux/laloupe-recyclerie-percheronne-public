@@ -1,27 +1,27 @@
     .table_horaires {
         text-align: center;
         background-color: black;
-        color: white;
+        color: black;
     }
 
     .case {
         padding-bottom: 5px;
         padding-top: 5px;
-        background-color: gray;
+        background-color: #cacaca;
     }
 
     .récupération {
-        background-color: #FFC065;
+        background-color: #ffd8a1;
         color: black;
     }
 
     .vente {
-        background-color: #E7ED8C;
+        background-color: #e0f0a3;
         color: black;
     }
 
     .double {
-        background: linear-gradient(0.25turn, #E7ED8C, #FFC065);
+        background: linear-gradient(0.25turn, #e0f0a3, #ffd8a1);
         color: black;
     }
 
@@ -125,6 +125,6 @@
         display: flex;
         position: fixed;
         left: 0;
-        bottom: 27%;
+        margin-top: -47vh;
     }
 }
