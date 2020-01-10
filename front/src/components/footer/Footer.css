@@ -1,5 +1,6 @@
 .footer_div{
-    background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 15%, rgba(181,216,125,1) 60%);}
+    background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 15%, #cccaca 50%);
+}
 
 @media screen and (max-width:420px) {
     .mob-0{display: none;}
@@ -84,6 +85,7 @@
     }
 
     .footer_div {
+        background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 45%, #cccaca 75%);
         display: flex;
         position: fixed;
         bottom: 0;

@@ -13,16 +13,16 @@ function Compteurs() {
                 <tbody>
                     <tr className="counts">
                         <td className="counts case"></td>
-                        <td className="counts case">Hebdomadaire</td>
-                        <td className="counts case">Totale</td>
+                        <td className="counts case gras">Hebdomadaire</td>
+                        <td className="counts case gras">Totale</td>
                     </tr>
                     <tr className="counts">
-                        <td className="counts casse">Récupération</td>
+                        <td className="counts case gras">Récupération</td>
                         <td className="counts récupération case">XXXX tonnes</td>
                         <td className="counts récupération case">XXXX tonnes</td>
                     </tr>
                     <tr className="counts">
-                        <td className="counts case">Vente</td>
+                        <td className="counts case gras">Vente</td>
                         <td className="counts vente case">XXXX tonnes</td>
                         <td className="counts vente case">XXXX tonnes</td>
                     </tr>

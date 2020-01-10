@@ -6,20 +6,25 @@
 .titre_produits {
     text-align: center;
     font-size: 50px;
-    margin-bottom: 0;
+    margin-bottom: 1vh;
+    color: white;
 }
 
 .groupe {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-around;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 1vh;
 }
 
 .cadre_produits {
     background-color: white;
     border-radius: 15px;
     text-align: center;
-    margin-left: 4%;
-    margin-right: 4%;
+    margin-left: 2%;
+    margin-right: 2%;
     margin-top: 3%;
     height: 26vh;
 }
@@ -27,6 +32,14 @@
 .image_produits {
     height: 20vh;
     width: 20vh;
+}
+
+.pratique {
+    border-radius: 15px;
+}
+
+.joli {
+    border-radius: 15px;
 }
 
 @media screen and (max-width:420px) {
@@ -47,11 +60,12 @@
     .cadre_produits {
         margin-left: auto;
         margin-right: auto;
+        margin-bottom: 2vh;
         height: 30vh;
     }
 
     .prod {
-        margin-top: 22vh;
+        margin-top: 18vh;
         margin-bottom: 8vh;
     }
 }
@@ -75,7 +89,7 @@
         margin-left: auto;
         margin-right: auto;
         height: 20vh;
-        margin-top: 6%;
+        margin-top: 4vh;
     }
 
     .prod {
@@ -108,12 +122,16 @@
         margin-left: auto;
         margin-right: auto;
         height: 15vh;
-        margin-top: 6%;
+        margin-top: 3vh;
     }
 
     .prod {
         margin-top: 10vh;
         margin-bottom: 10vh;
+    }
+
+    .titre_produits {
+        margin-bottom: 0;
     }
 
     .image_produits {

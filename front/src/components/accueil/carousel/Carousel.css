@@ -3,6 +3,7 @@
   text-align: center;
   font-size: 30px;
   font-weight: bold;
+  color: white;
 }
 
 .slides {
@@ -156,10 +157,14 @@
     .dsk-12{width: 100%;}
 
     .slider {
-      margin-top: 18vh;
+      margin-top: 16vh;
       margin-left: auto;
       margin-right: auto;
-      height: 420px;
+      height: 480px;
       width: 740px;
+    }
+
+    .slides {
+      margin-top: 4vh;
     }
 }
