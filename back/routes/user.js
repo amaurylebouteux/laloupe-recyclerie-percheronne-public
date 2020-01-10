@@ -2,13 +2,18 @@ const express = require('express');
 const router = express.Router();
 const connection = require("./conf");
 const verifyToken = require('./middleware');
+const bcrypt = require('bcryptjs');
+const salt = '$2a$10$uZjL/5bsCnn4Ge7aIJEo1O';
+const jwt = require('jsonwebtoken');
+const jwtsecret = 'gdgfhegfhegegjeg';
 
 router.post(
-    "/api/register", 
+    "/register", 
     (req,res) => {
+        const user = req.body;
       connection.query(
         "INSERT INTO user (username, user_password) VALUES (?, ?)", 
-        ["admin", bcrypt.hashSync("admin", salt)], 
+        [user.username, bcrypt.hashSync(user.user_password, salt)], 
         (error, results, fields) => {
           if( error ){
             res.send(error);
@@ -21,7 +26,7 @@ router.post(
     }
   )
   
-  router.post('/api/login', (req, res) => {
+  router.post('/login', (req, res) => {
   
     // on récupère les données de connexion de notre utilisateur 
     const user = req.body;
@@ -34,7 +39,7 @@ router.post(
       "SELECT * FROM user WHERE username=? AND user_password=?",
       [user.username, crypted ],
       (error, results, fields) => {
-        if (error && results.length === 0) {
+        if (error || results.length === 0) {
           res.status(401).send("Unable to login");
         }
         else {
@@ -43,12 +48,13 @@ router.post(
             // results[0],
             {user},
             jwtsecret,
+            {expiresIn: "1h"},
             (err, token) => {
               if( err ){
                 res.status(501).send("JWT error");
               }
               else{
-                res.json({token});
+                res.status(200).json({token});
               }
             })
         }
