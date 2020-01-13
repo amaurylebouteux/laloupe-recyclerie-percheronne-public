@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 import {NavLink} from 'react-router-dom';
 import './AdminAccueil.css';
+import './AdminHeader.css';
 
 class AdminAccueil extends Component{
 
@@ -20,7 +21,7 @@ class AdminAccueil extends Component{
                         <button className="adminNavButton mob-4 tab-3 tabx-3"><NavLink to="/AdminEvenements" className="inactive" activeClassName="active">Evénements</NavLink></button>
                         <button className="adminNavButton mob-4 tab-3 tabx-3"><NavLink to="/AdminProduits" className="inactive" activeClassName="active">Produits</NavLink></button>
                         <button className="adminNavButton mob-4 tab-3 tabx-3"><NavLink to="/AdminContact" className="inactive" activeClassName="active">Contact</NavLink></button>
-                        <button className="adminNavButton mob-4 tab-3 tabx-3" onClick={this.props.logOut}>Déconnexion</button>
+                        <button className="adminNavButton disconnect mob-4 tab-3 tabx-3" onClick={this.props.logOut}>Déconnexion</button>
                 </div>
                 </div>
             </div>
