@@ -10,8 +10,8 @@ function Accueil() {
         <div className='Accueil'>
             <Navigation />
             <Carousel />
-            <Compteurs />
             <Horaires />
+            <Compteurs />
             <Footer />
         </div>
     )

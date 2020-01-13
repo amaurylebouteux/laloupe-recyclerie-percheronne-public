@@ -3,12 +3,10 @@
     flex-direction: row;
     justify-content: space-between;
     height: 7vw;
-    background: linear-gradient(to right , #FFFFFF 12%, #37aae6 75%);
+    background: linear-gradient(to right , #FFFFFF 12%, #6ECDE6 65%);
 }
 
-
-
- #logoAdmin {
+#logoAdmin {
     width:7vw;
 }
 
@@ -25,6 +23,7 @@
 .adminLabel{
     width:15vw;
     margin:1vw;
+    color: white;
 }
 
 .adminField{

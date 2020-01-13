@@ -12,17 +12,22 @@
     margin-right: auto;
     text-align: center;
     padding: 20px;
-    margin-top: 22vh;
-    margin-bottom: 13vh;
+    margin-top: 20vh;
+    margin-bottom: 11vh;
 }
 
 .nom {
     font-size: 30px;
     font-weight: bold;
+    margin-top: 10px;
 }
 
 .infos {
     font-size: 20px;
+}
+
+.tot_cartes {
+    margin-bottom: 20px;        
 }
 
 @media screen and (max-width:420px) {
@@ -64,6 +69,11 @@
     .tab-10{width: 83.33%;}
     .tab-11{width: 91.66%;}
     .tab-12{width: 100%;}
+
+    .coord {
+        margin-top: 15vh;
+        margin-bottom: 9vh;
+    }
 
     .pratique {
         display: none;
@@ -117,5 +127,5 @@
     .pratique {
         display: none;
         margin: auto;
-    }
+    }   
 }
