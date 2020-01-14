@@ -11,7 +11,7 @@ Les ventes permettront de pérenniser l’activité, et ainsi créer de l’empl
 La Recyclerie Percheronne s’engage à sensibiliser la population par le biais d’ateliers, conférences et animations diverses.
             </p>
             <p className="texte">
-                Notre association souhaite être un lieu de mixité sociale, un lieu d’échange autour d’un même objectif : la réduction des déchets.Nous récupérons tous les objets pouvant bénéficier d’une seconde vie (non abimé, non tâché, non troués). Seuls les meubles peuvent nous être remis « amochés » sous conditions. Nous nous réservons le droit de refuser certains objets proposés ne respectant pas certaines de nos conditions.
+                Notre association souhaite être un lieu de mixité sociale, un lieu d’échange autour d’un même objectif : la réduction des déchets. Nous récupérons tous les objets pouvant bénéficier d’une seconde vie (non abimé, non tâché, non troués). Seuls les meubles peuvent nous être remis « amochés » sous conditions. Nous nous réservons le droit de refuser certains objets proposés ne respectant pas certaines de nos conditions.
             </p>   
             <p className="texte">
                 Merci de votre compréhension !

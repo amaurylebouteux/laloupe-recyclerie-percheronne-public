@@ -1,56 +1,4 @@
-.adminheader {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    height: 7vw;
-    background: linear-gradient(to right , #FFFFFF 12%, #37aae6 75%);
-}
 
-
-
- #logoAdmin {
-    width:7vw;
-}
-
-.adminTitle{
-    padding-right: 30%;
-}
-
-
-
-.adminButtonContainer{
-    display:flex;
-    flex-direction: row;
-    justify-content: space-around;
-}
-
-.adminNav{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.adminChoice{
-    margin-top:-1.5vw;
-
-}
-
-.adminNavButton{
-    height: 1.5vw;
-    width: 7vw;
-    font-size: 0.8em;
-    margin: -2.5vw 1vw 0 1vw;
-    
-}
-
-.active{
-    color:lightblue;
-}
-
-.inactive{
-    text-decoration: none;
-    color:black;
-}
 
 
 
@@ -69,48 +17,7 @@
     .mob-11{width: 91.66%;}
     .mob-12{width: 100%;}
 
-    .adminheader{
-        height:21vw;
-        background: linear-gradient(to right , #FFFFFF 24%, #37aae6 75%);
-    }
-
-    #logoAdmin {
-        width:21vw;
-    }
-
-    .adminTitle{
-        text-align: center;
-        padding:0;
-        margin-left: 12%;
-        font-size: 1.2em;
-    }
-
-    
-    .adminChoice{
-        text-align: center;
-        font-size: 4vw;
-    }
-
-    .adminButtonContainer{
-        display:flex;
-        flex-direction: row;
-        flex-wrap:wrap;
-        justify-content: space-around;
-        margin-top:-2vw;
-    }
-
-    .adminNavButton{
-        height: 6vw;
-        width: 35vw;
-        font-size: 1em;
-        margin: 0 1vw;
-        margin:1vw;
-    }
-
-
-
-}
-
+}  
 
 @media screen and (min-width:421px) and (max-width:1022px) {
     .tab-0{display: none;}
@@ -127,45 +34,8 @@
     .tab-11{width: 91.66%;}
     .tab-12{width: 100%;}
 
-
-    .adminheader{
-        height:21vw;
-        background: linear-gradient(to right , #FFFFFF 24%, #37aae6 75%);
-    }
-
-    #logoAdmin {
-        width:21vw;
-    }
-
-    .adminTitle{
-        text-align: center;
-        padding:0;
-        margin-left: 0%;
-        font-size: 2.2em;
-    }
-
-    
-    .adminChoice{
-        text-align: center;
-        font-size:2em;
-    }
-
-    .adminButtonContainer{
-        display:flex;
-        flex-direction: row;
-        flex-wrap:wrap;
-        justify-content: space-around;
-        margin-top:-4vw;
-    }
-
-    .adminNavButton{
-        height: 6vw;
-        width: 30vw;
-        font-size: 1.7em;
-        margin: 0 1vw;
-        margin:1vw;
-    }
 }
+    
 
 
 
@@ -184,45 +54,6 @@
     .tabx-10{width: 83.33%;}
     .tabx-11{width: 91.66%;}
     .tabx-12{width: 100%;}
-
-    .adminheader{
-        height:21vw;
-        background: linear-gradient(to right , #FFFFFF 24%, #37aae6 75%);
-    }
-
-    #logoAdmin {
-        width:21vw;
-    }
-
-    .adminTitle{
-        text-align: center;
-        padding:0;
-        margin-left: 0%;
-        font-size: 3.2em;
-    }
-
-    
-
-    .adminChoice{
-        text-align: center;
-        font-size:2em;
-    }
-
-    .adminButtonContainer{
-        display:flex;
-        flex-direction: row;
-        flex-wrap:wrap;
-        justify-content: space-around;
-        margin-top:-4vw;
-    }
-
-    .adminNavButton{
-        height: 6vw;
-        width: 30vw;
-        font-size: 1.7em;
-        margin: 0 1vw;
-        margin:1vw;
-    }
 }
 
 @media screen and (min-width:1025px) {
