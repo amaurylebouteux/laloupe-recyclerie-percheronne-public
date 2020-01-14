@@ -6,7 +6,7 @@ describe(
 
         let user = {
             username: "abcd",
-            user_password: "Suefghper"
+            user_password: "efgh"
         };
 
         beforeAll(
@@ -44,7 +44,7 @@ describe(
             (done) => {
 
                 user.username = "abcd";
-                user.user_password = "NonCeefghstDeTaFaute";
+                user.user_password = "efgh";
 
                 request.put(
                     "http://localhost:3000/api/user/" + user.id,
