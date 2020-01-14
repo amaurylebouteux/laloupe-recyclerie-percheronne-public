@@ -5,8 +5,8 @@ describe(
     () => {
 
         const events = {
-            event_name: "Jeremy t pd",
-            event_desc: "squeezie",
+            event_name: "abcd",
+            event_desc: "efgh",
             event_date: "2020-04-02",
             start_hour: "01:00:00", 
             end_hour: "02:00:00",
@@ -54,8 +54,8 @@ describe(
             "events_put", 
             (done) => {
 
-            events.event_name = "Jeremy t vraiment pas pd";
-            events.event_desc = "squeezie est un grosnul";
+            events.event_name = "abcd";
+            events.event_desc = "efgh";
             events.event_date = "2021-12-19";
             events.start_hour = "09:00:00"; 
             events.end_hour  = "10:00:00";

@@ -5,10 +5,10 @@ describe(
     () => {
 
         let contact = {
-            contact_name: "Jeremy t po pd",
-            adress: "squeezie",
+            contact_name: "abcd",
+            adress: "efgh",
             phone: "0621749054",
-            mail: "fabien@gastro.com"
+            mail: "fabien@contact.com"
         };
 
         beforeAll(
@@ -50,10 +50,10 @@ it(
     "contact_put",
     (done) => {
 
-        contact.contact_name = "Marcel";
-        contact.adress = "69 rue du Barnaudet";
+        contact.contact_name = "abcd";
+        contact.adress = "69 rue efgh";
         contact.phone = "6666666666";
-        contact.mail = "Barn@udet.com";
+        contact.mail = "abcd@contact.com";
 
 
         request.put(
