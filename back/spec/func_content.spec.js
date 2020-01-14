@@ -5,8 +5,8 @@ describe(
     () => {
 
         const func_content = {
-            title: "Jeremy t pd",
-            content: "squeezie"
+            title: "abcd",
+            content: "efgh"
         };
 
         beforeAll(

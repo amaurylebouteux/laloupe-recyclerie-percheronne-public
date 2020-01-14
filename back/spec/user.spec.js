@@ -5,8 +5,8 @@ describe(
     () => {
 
         let user = {
-            username: "Didier",
-            user_password: "Super"
+            username: "abcd",
+            user_password: "Suefghper"
         };
 
         beforeAll(
@@ -43,8 +43,8 @@ describe(
             "user_put",
             (done) => {
 
-                user.username = "Georgette";
-                user.user_password = "NonCestDeTaFaute";
+                user.username = "abcd";
+                user.user_password = "NonCeefghstDeTaFaute";
 
                 request.put(
                     "http://localhost:3000/api/user/" + user.id,
